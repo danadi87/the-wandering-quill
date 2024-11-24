@@ -1,0 +1,21 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  background-color: whitesmoke;
+  color: rgb(7, 75, 7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  border: solid 0.75px;
+  border-color: rgb(9, 44, 9, 0.7);
+}
+.container .sidebar li {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0px;
+  margin-left: 0px;
+}
