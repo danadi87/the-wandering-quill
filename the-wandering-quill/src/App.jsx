@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import "./styles/App.css";
 import axios from "axios";
 import Sidebar from "./components/Sidebar.jsx";
 import BooksList from "./assets/BooksList.json";
