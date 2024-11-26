@@ -1,7 +1,6 @@
 import "../styles/Footer.css";
-
 import { Link } from "react-router-dom";
-import GitHubLogo from "../assets/GitHubLogo.png";
+import GitHubLogo from "../assets/images/GitHubLogo.png";
 
 const Footer = () => {
   return (
