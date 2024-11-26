@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import "./styles/App.css";
 import axios from "axios";
 import Sidebar from "./components/Sidebar.jsx";
 import BooksList from "./assets/BooksList.json";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage.jsx";
 import NotFound from "./components/NotFound.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -44,6 +46,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           {/*pass on the filter function to the sidebar*/}
         </Routes>
+        <Navbar />
         <Sidebar onFilter={filterBooks} />
         <div className="main-content">
           {filteredBooks.map((book, id) => (
@@ -58,6 +61,7 @@ function App() {
             </div>
           ))}
         </div>
+        <Footer />
       </BrowserRouter>
     </>
   );
